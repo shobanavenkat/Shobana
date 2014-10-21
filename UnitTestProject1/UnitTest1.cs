@@ -33,5 +33,18 @@ namespace UnitTestProject1
 
             Assert.AreEqual(result, classResult);
         }
+
+        [TestMethod]
+        public void TestTheSubtractMethod()
+        {
+            const int value1 = 14;
+            const int value2 = 8;
+            const int result = 6;
+
+            var whiz = new MathWhiz();
+            var classResult = whiz.Subtract(value1, value2);
+
+            Assert.AreEqual(result, classResult);
+        }
     }
 }
